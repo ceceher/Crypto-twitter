@@ -47,6 +47,4 @@ for tweet in tw.Cursor(api.search,
 
 
 
-print("ya se acabo")
-
 
