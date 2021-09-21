@@ -13,7 +13,7 @@ auth = tw.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 
 api = tw.API(auth, wait_on_rate_limit = True)
 
-new_search = "#bitcoin OR #btc -filter:retweets"
+new_search = "#bitcoin OR #btc OR satoshi -filter:retweets"
 
 # tweets = tw.Cursor(api.search,
 #                 q = new_search,
@@ -26,7 +26,7 @@ for tweet in tw.Cursor(api.search,
                 q = new_search,
                 count = 100,
                 lang = 'en',
-                since = '2015-01-01').items():
+                since = '2021-01-01').items():
                 tweets.append(tweet)
                 users_data = [[tweet.created_at,
                 tweet.user.screen_name, 
