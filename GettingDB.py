@@ -13,7 +13,7 @@ auth = tw.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 
 api = tw.API(auth, wait_on_rate_limit = True)
 
-new_search = "#bitcoin OR #btc OR satoshi -filter:retweets"
+new_search = "Bitcoin OR #btc OR satoshi -filter:retweets"
 
 # tweets = tw.Cursor(api.search,
 #                 q = new_search,
